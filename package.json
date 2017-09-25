@@ -1,0 +1,52 @@
+{
+  "name": "node-base",
+  "version": "1.0.0",
+  "description": "A simple scaffold for node things.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "nyc mocha",
+    "test:vsc": "nyc mocha -R tap test/**/*.ts || @echo off"
+  },
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true,
+    "all": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:HeinousTugboat/node-base.git"
+  },
+  "author": "HeinousTugboat <admin@heinous.industries>",
+  "license": "MIT",
+  "homepage": "http://heinous.industries/",
+  "dependencies": {
+    "ts-node": "latest",
+    "typescript": "latest"
+  },
+  "devDependencies": {
+    "@types/chai": "latest",
+    "@types/mocha": "latest",
+    "chai": "latest",
+    "istanbul": "latest",
+    "karma": "latest",
+    "mocha": "latest",
+    "nyc": "latest",
+    "sinon": "latest",
+    "source-map-support": "latest",
+    "tslint": "latest"
+  }
+}

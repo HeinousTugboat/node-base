@@ -1,0 +1,15 @@
+{
+    "compilerOptions":
+    {
+        "target": "esnext",
+        "module": "commonjs",
+        "noEmit": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "moduleResolution": "node"
+    },
+    "include": ["./**/*.ts"]
+}
